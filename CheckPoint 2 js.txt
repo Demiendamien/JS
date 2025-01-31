@@ -1,0 +1,71 @@
+1. Inverser une chaîne :
+
+
+function inverserChaine(str) {
+    return str.split('').reverse().join('');
+}
+
+2. Compter les carractères :
+
+function compaterCaractere(str) {
+	return str.lenght;
+}
+
+3. Mettre les mots en majuscule :
+
+function mettreMotsEnMajuscule (str) {
+	return str.split('').map(mot => mot.charAt(0).toUppercase() + mot.slice(1)).join(' ');
+}
+
+4. Fonction Tableau : trouver le maximun et le minimum
+
+function trouverLeMaximum (tab) {
+	return Math.max(...tab);
+}
+
+function trouverLeMinimum (tab) {
+	return Math.min(...tab);
+}
+
+5. somme des tableau
+
+function sommeDesTableau (tab) {
+	return tab.reduce((acc, val) => acc + val, 0);
+}
+
+6. filtrer e tableau 
+
+function filtrerLeTableau (tab, condition) {
+	return tab.filter(condition);
+}
+
+
+7. nombrePremier 
+
+function nombrePremier(n) {
+	if (n <= 1) return false;
+	for (let i = 2; i < Math.sqrt(n) + 1; i++) {
+		if (n % i === 0) return false;
+			}
+	return true;
+}
+
+
+8 Factorielle
+
+
+function factorielle (n) {
+	if (n === 0) return1;
+return n* factorielle(n - 1);
+}
+
+
+9 Fibonacci
+
+function suiteFibonacci(n) {
+    let fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fib.push(fib[i - 1] + fib[i - 2]);
+    }
+    return fib;
+}
